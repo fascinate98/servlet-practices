@@ -1,7 +1,17 @@
-# servlet-practices
+1. Maven War project ¸¸µé±â
+maven project »ı¼º: packaging => war
+project ¼±ÅÃ(¿À¸¥ÂÊ¸Ş´º)-> java EE Tools -> generate Deployment Descriptor Stub(web.xml)
+web.xml ¿¡¼­ xmlns="http://JAVA.sun.com/xml/ns/javaee" ¼öÁ¤
+pom.xml ¼³Á¤(helloweb Âü°í)
+2. applications
+model1: model + jsp(controller,view)
 
-### 1. Maven War project ë§Œë“¤ê¸°
-1.	maven project ìƒì„±:  packaging =>  war
-2.	project ì„ íƒ(ì˜¤ë¥¸ìª½ë©”ë‰´)-> java EE Tools -> generate Deployment Descriptor Stub(web.xml)
-3.	web.xml ì—ì„œ xmlns="http://JAVA.sun.com/xml/ns/javaee" ìˆ˜ì •
-4.	pom.xml ì„¤ì •(helloweb ì°¸ê³ )
+emaillist01
+guestbook01
+model2: mvc, Model + View(jsp) + Controller(servlet)
+
+emaillist02
+guestbook02
+mysite
+
+mysite02
