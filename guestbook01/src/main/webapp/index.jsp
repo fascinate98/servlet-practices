@@ -32,12 +32,13 @@ GuestBookDao dao = new GuestBookDao();
 	</form>
 	<br>
 	<%
+	int count = list.size();
 	for(GuestBookVo vo : list){
 		String msg = vo.getMessage().replace("\n", "<br>");	
 	%>
 	<table width=510 border=1>
 		<tr>
-			<td><%=vo.getNo() %></td>
+			<td><%= count-- %></td>
 			<td><%=vo.getName() %></td>
 			<td><%=vo.getReg_date() %></td>
 			<td><a href="/guestbook01/deleteform.jsp?no=<%=vo.getNo()%>">삭제</a></td>
