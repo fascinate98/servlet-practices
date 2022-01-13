@@ -1,6 +1,13 @@
 ﻿
+<%@page import="java.util.List"%>
+<%@page import="com.poscoict.emaillist.vo.EmaillistVo"%>
+<%@page import="com.poscoict.emaillist.dao.EmaillistDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%
+ EmaillistDao dao = new EmaillistDao();
+ List<EmaillistVo> list = dao.findAll();
+%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -25,6 +32,8 @@
 		</tr>
 	</table>
 	<br>
+	
+	
 	<p>
 		<a href = "/emaillist01/form.jsp">추가메일 등록</a>
 	
