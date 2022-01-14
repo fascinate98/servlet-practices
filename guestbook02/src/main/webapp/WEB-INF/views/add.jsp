@@ -1,16 +1,18 @@
-<%@page import="com.poscoict.guestbook.vo.GuestbookVo"%>
 <%@page import="com.poscoict.guestbook.dao.GuestbookDao"%>
+<%@page import="com.poscoict.guestbook.vo.GuestbookVo"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
-request.setCharacterEncoding("utf-8");
-	String no = request.getParameter("no");
+	request.setCharacterEncoding("utf-8");
+	String name = request.getParameter("name");
 	String password = request.getParameter("password");
+	String message = request.getParameter("message");
 	
 	GuestbookVo vo = new GuestbookVo();
-	vo.setNo(Long.parseLong(no));
+	vo.setName(name);
 	vo.setPassword(password);
+	vo.setMessage(message);
 	
-	new GuestbookDao().delete(vo);
+	new GuestbookDao().insert(vo);
 	
 	response.sendRedirect(request.getContextPath());
 %>
