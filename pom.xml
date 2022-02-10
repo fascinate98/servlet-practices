@@ -95,6 +95,7 @@
 		<module>guestbook02</module>
 		<module>emaillist02</module>
 		<module>jstlel</module>
-	</modules>
+		<module>container</module>
+			</modules>
 	
 </project>
