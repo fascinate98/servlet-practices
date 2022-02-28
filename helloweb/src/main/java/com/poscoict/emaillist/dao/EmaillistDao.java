@@ -19,7 +19,7 @@ public class EmaillistDao {
 		  try {
 			  //1. 드라이버 로딩
 	          Class.forName("org.mariadb.jdbc.Driver");
-	          String url = "jdbc:mysql://192.168.0.42:3307/webdb?characterEncoding=UTF-8&serverTimezone=UTC";
+	          String url = "jdbc:mysql://192.168.0.73:3307/webdb?characterEncoding=UTF-8&serverTimezone=UTC";
 	          String user = "webdb";
 	          String passwd = "webdb";
 	          conn = DriverManager.getConnection(url, user, passwd);
